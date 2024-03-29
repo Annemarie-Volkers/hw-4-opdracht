@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
 /*////////////////////////
     Table of Contents
     1. Global Styles
@@ -11,21 +15,172 @@
         etc.
     5. Media Queries
 ////////////////////////*/
-
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 /* ------------------------------- 1. Global Styles -------------------------------- */
+:root {
+    --lightpurple: #F2F0FF;
+    --purple: #5722CD;
+    --blue: #4845E4;
+    --pink: #ED4385;
+    --black: #0C0C0C;
+    --grey: #7A7A7A;
+}
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Merriweather, "Times New Roman", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 /* ------------------------------- 2. Typography ----------------------------------- */
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 
 /* --------------- 3.1 Reusables ----------------------- */
+.outercontainer {
+    border: solid deeppink;
+    display: flex;
+    flex-direction: column;
+    /*width: 100%;*/
+    justify-content: center;
+    /*align-content: center;*/
+}
 
+.innercontainer-one {
+    border: solid yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*max-width: 80%;*/
+    /*padding: 20px;*/
+    flex-basis: 300px;
+    /*flex-shrink: 1;*/
+    /*flex-grow: 0;*/
+    /*flex-wrap: wrap;*/
+    justify-content: center;
+    margin: 0 20px;
+
+}
+
+.innercontainer-two {
+    border: solid green;
+    display: flex;
+    flex-direction: column;
+    /*padding: 20px;*/
+    /*max-width: 100%;*/
+    /*flex-basis: 1200px;*/
+    align-items: center;
+    margin: 0 20px;
+    align-content: center;
+    /*flex-wrap: wrap;*/
+
+}
 /* --------------- 3.2 Other --------------------------- */
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
+header {
+    border: solid blue;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    /padding: 50px;
+    background-color: #4845E4;
+}
 
+nav {
+    border: solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-self: end;
+    width: 100%;
+    background-color: #4845E4;
+
+}
+nav ul {
+    /*border: solid red 2px;*/
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-around;*/
+    gap: 50px;
+    margin: 20px 20px 20px 0;
+    list-style: none;
+    color: #F2F0FF;
+}
+
+.nav-links a {
+    color: #F2F0FF;
+    text-decoration: none;
+}
+
+.innercontainer-one p {
+    padding: 20px;
+}
+
+.inner-header {
+    color: white;
+}
+
+.header-button {
+    border-radius: 20px;
+    padding: 20px;
+    color: #F2F0FF;
+    background-color: #ED4385;
+    border: solid 2px #ED4385;
+
+}
 /* --------------- 4.2 Introduction ------------------- */
 
+/*--------4.3 Projects-------------*/
+.work-article {
+    border: solid darkorchid;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*margin-bottom: 100px;*/
+    flex-basis: 100px 100px;
+    /*justify-content: center;*/
+
+}
+
+.work-article__info-containter {
+    border: solid saddlebrown;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*width: 300px;*/
+
+
+}
+
+.view-project {
+    text-transform: uppercase;
+    color: var(--purple);
+}
+
+.work-article__image-wrapper {
+    flex-basis: 600px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+/*.section.outercontainer {*/
+/*    border: solid yellowgreen;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+
+/*}*/
 /* ------------------------------- 5. Media Queries -------------------------------- */
